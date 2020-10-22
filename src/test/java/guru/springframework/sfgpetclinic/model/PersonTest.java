@@ -41,4 +41,10 @@ class PersonTest implements ModelTests {
         System.out.println(testInfo.getDisplayName() + ": " + repetitionInfo.getCurrentRepetition());
 
     }
+
+    @RepeatedTest(value = 3, name = "Test \"{displayName}\" is running its iteration number {currentRepetition} of {totalRepetitions}")
+    @DisplayName("My first repeated test")
+    void testCustomRepeatedTest() {
+
+    }
 }
